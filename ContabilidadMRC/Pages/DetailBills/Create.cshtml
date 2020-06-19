@@ -2,23 +2,23 @@
 @model ContabilidadMRC.Pages.DetailBills.CreateModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Insertar Detalle Facturas";
 }
 
-<h1>Create</h1>
+<h1>Insertar Detalle de Factura</h1>
 
-<h4>DetailBill</h4>
+<h4>Detalle de Factur</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="DetailBill.BillID" class="control-label"></label>
+                <label asp-for="DetailBill.BillID" class="control-label">ID de Factura</label>
                 <select asp-for="DetailBill.BillID" class ="form-control" asp-items="ViewBag.BillID"></select>
             </div>
             <div class="form-group">
-                <label asp-for="DetailBill.ProductID" class="control-label"></label>
+                <label asp-for="DetailBill.ProductID" class="control-label">ID de Producto</label>
                 <select asp-for="DetailBill.ProductID" class ="form-control" asp-items="ViewBag.ProductID"></select>
             </div>
             <div class="form-group">
@@ -34,7 +34,7 @@
 </div>
 
 <div>
-    <a asp-page="Index">Back to List</a>
+    <a asp-page="Index">Volver a Inicio Detalles de Facturas</a>
 </div>
 
 @section Scripts {

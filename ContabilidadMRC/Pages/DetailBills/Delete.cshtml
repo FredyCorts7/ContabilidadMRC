@@ -2,14 +2,14 @@
 @model ContabilidadMRC.Pages.DetailBills.DeleteModel
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Eliminar Detalle de Factura";
 }
 
-<h1>Delete</h1>
+<h1>Eliminar</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Esta seguro de querer Eliminar este Detalle de Factura?</h3>
 <div>
-    <h4>DetailBill</h4>
+    <h4>Detalle de Factura</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -35,6 +35,6 @@
     <form method="post">
         <input type="hidden" asp-for="DetailBill.DetailBillID" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-page="./Index">Back to List</a>
+        <a asp-page="./Index">Volver a Inicio Detalles de Facturas</a>
     </form>
 </div>

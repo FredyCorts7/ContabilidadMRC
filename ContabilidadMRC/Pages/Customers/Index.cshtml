@@ -2,13 +2,13 @@
 @model ContabilidadMRC.Pages.Customers.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Inicio Clientes";
 }
 
-<h1>Index</h1>
+<h1>Inicio de Clientes</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Insertar Cliente</a>
 </p>
 <table class="table">
     <thead>
@@ -50,9 +50,9 @@
                 @Html.DisplayFor(modelItem => item.BirthDay)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.CustomerID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.CustomerID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.CustomerID">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.CustomerID">Editar</a> |
+                <a asp-page="./Details" asp-route-id="@item.CustomerID">Detalles</a> |
+                <a asp-page="./Delete" asp-route-id="@item.CustomerID">Eliminar</a>
             </td>
         </tr>
 }

@@ -2,13 +2,13 @@
 @model ContabilidadMRC.Pages.Bills.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Inicio Facturas";
 }
 
-<h1>Index</h1>
+<h1>Inicio de Facturacion</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Insertar Factura</a>
 </p>
 <table class="table">
     <thead>
@@ -44,9 +44,9 @@
                 @Html.DisplayFor(modelItem => item.Customer.IdCard)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.BillID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.BillID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.BillID">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.BillID">Editar</a> |
+                <a asp-page="./Details" asp-route-id="@item.BillID">Detalles</a> |
+                <a asp-page="./Delete" asp-route-id="@item.BillID">Eliminar</a>
             </td>
         </tr>
 }

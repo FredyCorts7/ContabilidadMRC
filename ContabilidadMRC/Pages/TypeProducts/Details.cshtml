@@ -2,13 +2,13 @@
 @model ContabilidadMRC.Pages.TypeProducts.DetailsModel
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalles de Tipos de Productos";
 }
 
-<h1>Details</h1>
+<h1>Detalles de Tipo de Producto</h1>
 
 <div>
-    <h4>TypeProduct</h4>
+    <h4>Tipo de Productos</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -32,6 +32,6 @@
     </dl>
 </div>
 <div>
-    <a asp-page="./Edit" asp-route-id="@Model.TypeProduct.TypeProductID">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./Edit" asp-route-id="@Model.TypeProduct.TypeProductID">Editar</a> |
+    <a asp-page="./Index">Volver a Inicio de Tipo de Productos</a>
 </div>

@@ -2,12 +2,12 @@
 @model ContabilidadMRC.Pages.Ivas.DeleteModel
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Eliminar Ivas";
 }
 
-<h1>Delete</h1>
+<h1>Eliminar Iva</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Esta seguro que desea Eliminar este Iva?</h3>
 <div>
     <h4>Iva</h4>
     <hr />
@@ -29,6 +29,6 @@
     <form method="post">
         <input type="hidden" asp-for="Iva.IvaID" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-page="./Index">Back to List</a>
+        <a asp-page="./Index">Volver a Inicio de Ivas</a>
     </form>
 </div>

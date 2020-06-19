@@ -2,13 +2,13 @@
 @model ContabilidadMRC.Pages.TypeProducts.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Inicio de Tipo de Productos";
 }
 
-<h1>Index</h1>
+<h1>Inicio Tipos de Productos</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Insertar Tipo de Producto</a>
 </p>
 <table class="table">
     <thead>
@@ -38,9 +38,9 @@
                 @Html.DisplayFor(modelItem => item.Iva.Description)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.TypeProductID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.TypeProductID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.TypeProductID">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.TypeProductID">Editar</a> |
+                <a asp-page="./Details" asp-route-id="@item.TypeProductID">Detalles</a> |
+                <a asp-page="./Delete" asp-route-id="@item.TypeProductID">Eliminar</a>
             </td>
         </tr>
 }
