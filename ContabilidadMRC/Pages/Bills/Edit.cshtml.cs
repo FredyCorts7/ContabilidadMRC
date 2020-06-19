@@ -38,8 +38,8 @@ namespace ContabilidadMRC.Pages.Bills
             {
                 return NotFound();
             }
-           ViewData["CustomerID"] = new SelectList(_context.Customer, "CustomerID", "LastName");
-           ViewData["EmployeeID"] = new SelectList(_context.Employee, "EmployeeID", "LastName");
+           ViewData["CustomerID"] = new SelectList(_context.Customer, "CustomerID", "IdCard");
+           ViewData["EmployeeID"] = new SelectList(_context.Employee, "EmployeeID", "IdCard");
             return Page();
         }
 

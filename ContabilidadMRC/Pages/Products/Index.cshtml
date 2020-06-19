@@ -56,10 +56,10 @@
                 @Html.DisplayFor(modelItem => item.ExpiredAt)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Brand.Description)
+                @Html.DisplayFor(modelItem => item.Brand.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TypeProduct.Description)
+                @Html.DisplayFor(modelItem => item.TypeProduct.Name)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ProductID">Edit</a> |

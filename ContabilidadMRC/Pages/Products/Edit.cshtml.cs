@@ -38,8 +38,8 @@ namespace ContabilidadMRC.Pages.Products
             {
                 return NotFound();
             }
-           ViewData["BrandID"] = new SelectList(_context.Brand, "BrandID", "Description");
-           ViewData["TypeProductID"] = new SelectList(_context.Set<TypeProduct>(), "TypeProductID", "Description");
+           ViewData["BrandID"] = new SelectList(_context.Brand, "BrandID", "Name");
+           ViewData["TypeProductID"] = new SelectList(_context.Set<TypeProduct>(), "TypeProductID", "Name");
             return Page();
         }
 

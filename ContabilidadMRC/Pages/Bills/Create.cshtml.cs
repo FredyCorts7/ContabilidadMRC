@@ -21,8 +21,8 @@ namespace ContabilidadMRC.Pages.Bills
 
         public IActionResult OnGet()
         {
-        ViewData["CustomerID"] = new SelectList(_context.Customer, "CustomerID", "LastName");
-        ViewData["EmployeeID"] = new SelectList(_context.Employee, "EmployeeID", "LastName");
+        ViewData["CustomerID"] = new SelectList(_context.Customer, "CustomerID", "IdCard");
+        ViewData["EmployeeID"] = new SelectList(_context.Employee, "EmployeeID", "IdCard");
             return Page();
         }
 

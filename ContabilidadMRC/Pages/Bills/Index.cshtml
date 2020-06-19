@@ -38,10 +38,10 @@
                 @Html.DisplayFor(modelItem => item.CreatedAt)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Employee.LastName)
+                @Html.DisplayFor(modelItem => item.Employee.IdCard)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Customer.LastName)
+                @Html.DisplayFor(modelItem => item.Customer.IdCard)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.BillID">Edit</a> |
