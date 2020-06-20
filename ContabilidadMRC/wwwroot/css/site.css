@@ -12,6 +12,15 @@ a {
   color: #0366d6;
 }
 
+.bgMain {
+    background-color: #ECF0F1;
+}
+
+.menuRouting {
+    background-color: #7B7D7D;
+    border-radius: 20px;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
@@ -49,6 +58,10 @@ html {
   html {
     font-size: 16px;
   }
+}
+
+body {
+    font-family: 'Varela Round', sans-serif !important;
 }
 
 .border-top {
